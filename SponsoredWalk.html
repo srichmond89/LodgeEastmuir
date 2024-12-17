@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<style>
+	body {
+				  font-family: Verdana, sans-serif;
+				  margin: 0;
+				}
+				
+				* {
+				  box-sizing: border-box;
+				}
+				
+				.row > .column {
+				  padding: 0 8px;
+				}
+				
+				.row:after {
+				  content: "";
+				  display: table;
+				  clear: both;
+				}
+				
+				.column {
+				  float: left;
+				  width: 25%;
+				}
+				
+				/* The Modal (background) */
+				.modal {
+				  display: none;
+				  position: fixed;
+				  z-index: 1;
+				  padding-top: 100px;
+				  left: 0;
+				  top: 0;
+				  width: 100%;
+				  height: 100%;
+				  overflow: auto;
+				  background-color: black;
+				}
+				
+				/* Modal Content */
+				.modal-content {
+				  position: relative;
+				  background-color: #fefefe;
+				  margin: auto;
+				  padding: 0;
+				  width: 50%;
+				  max-width: 1200px;
+				  height: 50%;
+				}
+				
+				/* The Close Button */
+				.close {
+				  color: white;
+				  position: absolute;
+				  top: 10px;
+				  right: 25px;
+				  font-size: 35px;
+				  font-weight: bold;
+				}
+				
+				.close:hover,
+				.close:focus {
+				  color: #999;
+				  text-decoration: none;
+				  cursor: pointer;
+				}
+				
+				.mySlides {
+				  display: none;
+				}
+				
+				.cursor {
+				  cursor: pointer;
+				}
+				
+				/* Next & previous buttons */
+				.prev,
+				.next {
+				  cursor: pointer;
+				  position: absolute;
+				  top: 50%;
+				  width: auto;
+				  padding: 16px;
+				  margin-top: -50px;
+				  color: white;
+				  font-weight: bold;
+				  font-size: 20px;
+				  transition: 0.6s ease;
+				  border-radius: 0 3px 3px 0;
+				  user-select: none;
+				  -webkit-user-select: none;
+				}
+				
+				/* Position the "next button" to the right */
+				.next {
+				  right: 0;
+				  border-radius: 3px 0 0 3px;
+				}
+				
+				/* On hover, add a black background color with a little bit see-through */
+				.prev:hover,
+				.next:hover {
+				  background-color: rgba(0, 0, 0, 0.8);
+				}
+				
+				/* Number text (1/3 etc) */
+				.numbertext {
+				  color: #f2f2f2;
+				  font-size: 12px;
+				  padding: 8px 12px;
+				  position: absolute;
+				  top: 0;
+				}
+				
+				img {
+				  margin-bottom: -4px;
+				}
+				
+				.caption-container {
+				  text-align: center;
+				  background-color: black;
+				  padding: 2px 16px;
+				  color: white;
+				}
+				
+				.demo {
+				  opacity: 0.6;
+				}
+				
+				.active,
+				.demo:hover {
+				  opacity: 1;
+				}
+				
+				img.hover-shadow {
+				  transition: 0.3s;
+				}
+				
+				.hover-shadow:hover {
+				  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+
+				* {box-sizing: border-box;}
+				body {font-family: Verdana, sans-serif;}
+				.mySlides {display: none;}
+				img {vertical-align: middle;}
+
+				/* Slideshow container */
+				.slideshow-container {
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+				}
+
+				/* Caption text */
+				.text {
+				color: #f2f2f2;
+				font-size: 15px;
+				padding: 8px 12px;
+				position: absolute;
+				bottom: 8px;
+				width: 100%;
+				text-align: center;
+				}
+
+				/* Number text (1/3 etc) */
+				.numbertext {
+				color: #f2f2f2;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 0;
+				}
+
+				/* The dots/bullets/indicators */
+				.dot {
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+				}
+
+				.active {
+				background-color: #717171;
+				}
+
+				/* Fading animation */
+				.fade {
+				animation-name: fade;
+				animation-duration: 1.5s;
+				}
+
+				@keyframes fade {
+				from {opacity: .4} 
+				to {opacity: 1}
+				}
+
+				/* On smaller screens, decrease text size */
+				@media only screen and (max-width: 300px) {
+				.text {font-size: 11px}
+				}
+</style>
+
+<head>
+	<title>Eastmuir Masonic Lodge Official Site</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="landing is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Lodge Eastmuir No.1126</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
+							<ul>
+								<li><a href="index.html" class="scrolly">Home</a></li>
+								<li><a href="index.html#rwm" class="scrolly">Right Worshipful Master</a></li>
+								<li><a href="index.html#officeBearers" class="scrolly">Office Bearers</a></li>
+								<li><a href="index.html#syllabus" class="scrolly">Syllabus</a></li>
+								<li><a href="index.html#contact" class="scrolly">Get In Touch</a></li>
+								<li><a href="index.html#social" class="scrolly">Social</a></li>
+								<li><a href="PastMasters.html">Past Masters</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Sponsored Walk -->
+		<section id="sponsoredWalk" class="wrapper style2">
+			<div class="content" style="padding-left: 10px;">
+				<table>
+					<tr>
+						<td>
+							<h2>Sponsored Walk 2024</h2>
+							<img src="images/Walk2024_1.jpg" alt="" />
+							<img src="images/Walk2024_2.jpg" alt="" />
+							<p>On Saturday 27th July 2024, Lodge Eastmuir No.1126 once again had their Annual Sponsored walk in aid of the Lodges Nominated Charity.</p>
+							<p>
+								This year the charity is Caledonia School LCR Unit in Baillieston. The Lodge have supported such schools locally over the last few years and were happy to do so once again.
+							</p>
+							<p>
+								Members and friends walked from Lodge Eastmuir's premises to Lodge St.Brydes No.579 in Uddingston, after a small break and refreshment the brethren 
+								and ladies made their way back to the Lodge via Lodge Robert Burns No.440. 
+							</p>
+							<p>The lodge has a close contact with the school as the son of one of our members attends there.</p>
+							<p>
+								On Thursday 21st November the IPM Stuart McManus was pleased to hand over a cheque for £4,100 to the Head Mistress of the School and she expressed her grateful thanks.
+							</p>
+							<p>
+								She commented that the donation would be put to good use and that she would write to us outlining how the money was spent to benefit the children.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>Sponsored Walk 2023</h2>
+							<img src="images/Walk2023.jpg" alt="" />
+							<p>On Saturday 20th May 2023, Lodge Eastmuir No.1126 had their Annual Sponsored walk in aid of the Lodges Nominated Charity.</p>
+							<p>
+								This year the charity is Eastmuir School in Barlanark. The school is for kids that have challenging and special needs. The Lodge 
+								have supported the school over many years and this year is no different.
+							</p>
+							<p>
+								On the day 20 people made up of brethren, wives and friends took to the pavement and walked from Lodge Eastmuir premises to Lodge St.Brydes 
+								No.579 in Uddingston, after a small break and refreshment the brethren and ladies made their way back to the Lodge via Lodge Robert Burns 
+								No.440. Lodge Robert Burns kindly put on some refreshments and a bite to eat for all.
+							</p>
+							<p>
+								After all the monies were received and counted the Master Brother Stuart McManus was delighted to hand over a Cheque for £3,020 to the Fiona Welsh 
+								Deputy Head of the school.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>Sponsored Walk 2022</h2>
+							<img src="images/Walk2022.jpg" alt="" />
+							<p>
+								This year our Sponsored Walk on behalf of SANDS raised the magnificant sum of £4,375. A big thanks to everyone who supported this great cause. The picture 
+								shows the cheque being presented to our RWM David Wheatley by our Senior Deacon Darren Bambridge.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>Sponsored Walk 2019</h2>
+							<img src="images/Walk2019_1.jpg" alt="" />
+							<img src="images/Walk2019_2.jpg" alt="" />
+							<p>The final amount raised this year for Aultmore School was a fantastic £3.050.</p>
+							<p>The RWM brother Ian Haldane is pictured presenting the cheque to the school along with some of the brethren.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>Sponsored Walk 2019</h2>
+							<img src="images/Walk2019_3.jpg" alt="" />
+							<p>
+								Our charity fund raising this year took place on Saturday 18th May from our Lodge in Shettleston to Lodge St Bryde (Uddingston) on behalf 
+								of Aultmore Primary School in Easterhouse  who provide an education service for Autistic Children.
+							</p>
+							<p>The money is still being collected and the amount raised will be published soon.</p>
+							<p>Some of the walkers are shown in the photograph below. The RWM would like to thank all the walkers and those who donated money.​​</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2>Sponsored Walk 2018</h2>
+							<img src="images/Walk2018.jpg" alt="" />
+							<p>Our Annual Sponsored Walk from Shettleston to Uddingston (and back again if you can make it), will take place on Saturday 12th May. </p>
+							<p>This year it is in aid of Alzheimer Scotland who provide a wide range of specialist services for people with Dementia and their carers.</p>
+							<p>Presentation of the cheque for £3,800 to Alzeimers Scotland. Along with our RWM were the RWPGM James Peddie and WSPGM William Newlands.</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://www.facebook.com/stephen.richmond.33" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/srichmond89/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Eastmuir Masonic Lodge</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
